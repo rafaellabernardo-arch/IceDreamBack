@@ -45,3 +45,10 @@ model ItemPedido {
   pedido       Pedido   @relation(fields: [pedidoId], references: [id])
   produto      Produto  @relation(fields: [produtoId], references: [id])
 }
+model Funcionario {
+  id        Int    @id @default(autoincrement())
+  nome      String
+  cargo     String
+  telefone  String
+  email     String @unique
+}

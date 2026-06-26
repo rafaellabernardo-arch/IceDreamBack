@@ -74,3 +74,14 @@ Content-Type: application/json
     "nome": "Limão",
     "preco": 11.50
 }
+
+###
+POST http://localhost:3000/funcionarios
+Content-Type: application/json
+
+{
+    "nome": "Carlos Silva",
+    "cargo": "Atendente",
+    "telefone": "48999998888",
+    "email": "carlos@icedream.com"
+}

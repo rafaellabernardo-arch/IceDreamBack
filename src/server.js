@@ -20,8 +20,26 @@ app.post('/clientes', async (req, res) => {
     res.json(cliente)
 }) 
 
+app.post('/funcionarios', async (req, res) => {
+
+    const { nome, cargo, telefone, email } = req.body
+
+    const funcionario = await prisma.funcionario.create({
+        data: {
+            nome,
+            cargo,
+            telefone,
+            email
+        }
+    })
+
+    res.json(funcionario)
+
+})
+
 app.post('/produtos', async (req, res) => {
 
+    
     const { nome, preco } = req.body
 
     const produto = await prisma.produto.create({
