@@ -7,3 +7,70 @@ Content-Type: application/json
   "email": "rafa@gmail.com"
 }
 
+###
+POST http://localhost:3000/pedidos
+Content-Type: application/json
+
+{
+    "clienteId": 1,
+    "itens": []
+}
+
+###
+POST http://localhost:3000/pedidos
+Content-Type: application/json
+
+{
+    "clienteId": 2,
+    "itens": [
+        {
+            "produtoId": 1,
+            "quantidade": 2
+        }
+    ]
+}
+
+###
+POST http://localhost:3000/produtos
+Content-Type: application/json
+
+{
+    "nome": "Chocolate",
+    "preco": 12.50
+}
+
+###
+POST http://localhost:3000/produtos
+Content-Type: application/json
+
+{
+    "nome": "Morango",
+    "preco": 11.90
+}
+
+###
+POST http://localhost:3000/produtos
+Content-Type: application/json
+
+{
+    "nome": "Baunilha",
+    "preco": 10.90
+}
+
+###
+POST http://localhost:3000/produtos
+Content-Type: application/json
+
+{
+    "nome": "Coco",
+    "preco": 12.00
+}
+
+###
+POST http://localhost:3000/produtos
+Content-Type: application/json
+
+{
+    "nome": "Limão",
+    "preco": 11.50
+}
